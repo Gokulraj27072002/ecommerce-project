@@ -23,36 +23,36 @@ export default function Navbar() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto mx-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="#">
+            <a className="nav-link fs-5" href="#">
               Home{" "}
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link fs-5" href="#">
               Products
             </a>
           </li>
 
           <li className="nav-item">
-            <a className="nav-link disabled" href="#">
+            <a className="nav-link fs-5" href="#">
               About
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled" href="#">
+            <a className="nav-link fs-5" href="#">
               Contact
             </a>
           </li>
         </ul>
         <div className="buttons mx-4">
-          <a href="" className="btn btn-outline-dark ms-2">
-          <UilSignin size="25" color="black" />Login
+          <a href="" className=" fs-5 btn btn-outline-dark ms-2">
+          <UilSignin size="30" color="black" />Login
           </a>
-          <a href="" className="btn btn-outline-dark ms-2">
-          <UilUserPlus size="25" color="black" />Register
+          <a href="" className=" fs-5 btn btn-outline-dark ms-2">
+          <UilUserPlus size="30" color="black" />Register
           </a>
-          <a href="" className="btn btn-outline-dark ms-2">
-          <UilShoppingCartAlt size="25" color="black" /> Cart(0)
+          <a href="" className=" fs-5 btn btn-outline-dark ms-2">
+          <UilShoppingCartAlt size="30" color="black" /> Cart(0)
           </a>
         </div>
       </div>
