@@ -1,45 +1,66 @@
 import React from "react";
+import { UilSignin } from '@iconscout/react-unicons'
+import { UilUserPlus } from '@iconscout/react-unicons'
+import { UilShoppingCartAlt } from '@iconscout/react-unicons'
 
 export default function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        Navbar
+    <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm">
+      <a className="navbar-brand fw-bold fs-4 mx-2" href="#">
+        HW COLLECTIONS
       </a>
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Home <span class="sr-only">(current)</span>
+
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto mx-auto">
+          <li className="nav-item active">
+            <a className="nav-link" href="#">
+              Home{" "}
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Features
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+              Products
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Pricing
+
+          <li className="nav-item">
+            <a className="nav-link disabled" href="#">
+              About
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">
-              Disabled
+          <li className="nav-item">
+            <a className="nav-link disabled" href="#">
+              Contact
             </a>
           </li>
         </ul>
+        <div className="buttons mx-4">
+          <a href="" className="btn btn-outline-dark ms-2">
+          <UilSignin size="25" color="black" />Login
+          </a>
+          <a href="" className="btn btn-outline-dark ms-2">
+          <UilUserPlus size="25" color="black" />Register
+          </a>
+          <a href="" className="btn btn-outline-dark ms-2">
+          <UilShoppingCartAlt size="25" color="black" /> Cart(0)
+          </a>
+        </div>
       </div>
     </nav>
+
+
+
+
+
   );
 }
