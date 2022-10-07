@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState ,useEffect} from "react";
+import Products from "./Products";
 function Home() {
+
+    
+    
   return (
+
+    <>
     <div className="hero">
       <div className="card bg-dark text-white">
         <img
@@ -20,6 +26,9 @@ function Home() {
         </div>
       </div>
     </div>
+
+    <Products/>
+    </>
   );
 }
 
