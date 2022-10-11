@@ -2,13 +2,14 @@ import React from "react";
 import { UilSignin } from '@iconscout/react-unicons'
 import { UilUserPlus } from '@iconscout/react-unicons'
 import { UilShoppingCartAlt } from '@iconscout/react-unicons'
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm">
-      <a className="navbar-brand fw-bold fs-4 mx-2" href="#">
+      <Link className="navbar-brand fw-bold fs-4 mx-2" to="/">
         HW COLLECTIONS
-      </a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -23,37 +24,37 @@ export default function Navbar() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto mx-auto">
           <li className="nav-item active">
-            <a className="nav-link fs-5" href="#">
+            <Link className="nav-link fs-5" to="/">
               Home{" "}
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link fs-5" href="#">
+            <Link className="nav-link fs-5" to="/products">
               Products
-            </a>
+            </Link>
           </li>
 
           <li className="nav-item">
-            <a className="nav-link fs-5" href="#">
+            <Link className="nav-link fs-5" to="/about">
               About
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link fs-5" href="#">
+            <Link className="nav-link fs-5" to="/contact">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="buttons mx-4">
-          <a href="" className=" fs-5 btn btn-outline-dark ms-2">
+          <Link to="/login" className=" fs-5 btn btn-outline-dark ms-2">
           <UilSignin size="30" color="black" />Login
-          </a>
-          <a href="" className=" fs-5 btn btn-outline-dark ms-2">
+          </Link>
+          <Link to="/register" className=" fs-5 btn btn-outline-dark ms-2">
           <UilUserPlus size="30" color="black" />Register
-          </a>
-          <a href="" className=" fs-5 btn btn-outline-dark ms-2">
+          </Link>
+          <Link to="/cart" className=" fs-5 btn btn-outline-dark ms-2">
           <UilShoppingCartAlt size="30" color="black" /> Cart(0)
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
